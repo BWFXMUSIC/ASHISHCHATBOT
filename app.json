@@ -1,136 +1,73 @@
 {
-    "name": "Asʜɪsʜ",   
-    "logo": "https://graph.org/file/5fc8dd23ea909c8818e65.jpg", 
+    "name": "𝐈𝛕ᷟ͢𝚣⃪ꙴ ⋆‌⃝ʜᴏᴛ𓃭 ⃟ᴍᴜsɪᴄ⛦⃕͜༆",
+    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
+    "logo": "https://telegra.ph/file/8a5171024a3bc5569ee3f.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "Queen Chatbot",
-    "telegram-chat-bot",
-    "Chatbot",
+    "VenomX",
+    "MusicBot",
     "telegram-bot",
     "pyrogram"
     ],
     "env": {
-        "BOT_TOKEN": {
-            "description": "telegram bot token here",
-           "value": "💌ʜᴇʟʟᴏ👻"
-            "required": true
-        },        
-        "MONGO_URL": {
-            "description": "mongo db url here",
-           "value": "@cute_pari_ap_bot"
-            "required": true
-        },
-        "BOT_USERNAME": {
-            "description": "telegram bot username here without @",
-            "value": "@BWFXMUSIC"
-            "required": true
-        },
-        "OWNER_USERNAME": {
-            "description": "Owner Username without @",
-            "required": true
-        },
-        "BOT_NAME": {
-            "description": "Simple Bot-name. Do not use Modified Text..",
-            "required": true
-        },
-        "UPDATE_CHNL": {
-            "description": "Your Updates Channel without @",
-            "required": true
-        },
-        "SUPPORT_GRP": {
-            "description": "Your Support Group without @",
-            "required": true
-        },
-        "STKR": {
-            "description": "Sticker for start ",
-            "required": false
-        },
-        "STKR1": {
-            "description": "Sticker for start ",
-            "required": false
-        },
-        "STKR2": {
-            "description": "Sticker for start ",
-            "required": false
-        },
-        "STKR3": {
-            "description": "Sticker for start ",
-            "required": false
-        },
-        "STKR4": {
-            "description": "Sticker for start ",
-            "required": false 
-        },
-        "STKR5": {
-            "description": "Sticker for start ",
-            "required": false 
-        },
-        "STKR6": {
-            "description": "Sticker for start ",
-            "required": false 
-        },
-        "STKR7": {
-            "description": "Sticker for start ",
-            "required": false 
-        },
-       "STKR8": {
-            "description": "Sticker for start ",
-            "required": false 
-        },
-        "START_IMG1": {
-            "description": "Start Image For Bot.",
-            "required": true
-        },
-        "START_IMG2": {
-            "description": "Start Image For Bot.",
-            "required": true
-        },
-        "START_IMG3": {
-            "description": "Start Image For Bot.",
-            "required": true
-        },
-        "START_IMG4": {
-            "description": "Start Image For Bot.",
-            "required": true
-        },
-        "START_IMG5": {
-            "description": "Start Image For Bot.",
-            "required": true
-        },
-        "START_IMG6": {
-            "description": "Start Image For Bot.",
-            "required": true
-        },
-        "START_IMG7": {
-            "description": "Start Image For Bot.",
-            "required": true
-        },
-        "START_IMG8": {
-            "description": "Start Image For Bot.",
-            "required": true
-        },
-        "START_IMG9": {
-            "description": "Start Image For Bot.",
-            "required": true
-        },
-        "START_IMG10": {
-            "description": "Start Image For Bot.",
-            "required": true
-        },
-        "API_ID": {
-            "description": "telegram api id here",
-            "required": true
-        },
-        "API_HASH": {
-            "description": "telegram api hash here",
-            "required": true
-        }
+      "API_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "A Bot's token from Botfather",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "Get a mongodb url from https://cloud.mongodb.com.",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "The user id of user whom you would like to add as OWNER.",
+        "value": "6194877007",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "A Pyrogram v2 String Session from @Venom_string_robot on Telegram.",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "Your Heroku account's API key",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "Your heroku app name",
+        "value": "",
+        "required": false
+      },
+      "LOGGER_ID": {
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
+        "value": "",
+        "required": true
+      }
     },
-    "addons": [
-        {
-            "plan": "heroku-postgresql"
-        }
-    ]
-    }
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+}
