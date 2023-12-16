@@ -14,14 +14,17 @@
     "env": {
         "BOT_TOKEN": {
             "description": "telegram bot token here",
+           "value": "💌ʜᴇʟʟᴏ👻"
             "required": true
         },        
         "MONGO_URL": {
             "description": "mongo db url here",
+           "value": "@cute_pari_ap_bot"
             "required": true
         },
         "BOT_USERNAME": {
             "description": "telegram bot username here without @",
+            "value": "@BWFXMUSIC"
             "required": true
         },
         "OWNER_USERNAME": {
