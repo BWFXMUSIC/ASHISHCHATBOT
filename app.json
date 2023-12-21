@@ -12,7 +12,7 @@
     "pyrogram"
     ],
     "env": {
-        "BOT_TOKEN": { "@cute_pari_ap_bot"
+        "BOT_TOKEN": {
             "description": "telegram bot token here",
             "required": true
         },        
@@ -130,4 +130,4 @@
             "plan": "heroku-postgresql"
         }
     ]
-        }
+    }
