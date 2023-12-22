@@ -132,13 +132,13 @@ DEV_OP = [
 PNG_BTN = [
     [
          InlineKeyboardButton(
-             text="🧸 ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ 🧸",
+             text="⛩️ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ⛩️",
              url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
          ),
      ],
      [
          InlineKeyboardButton(
-             text="✨ sᴜᴘᴘᴏʀᴛ ✨", 
+             text="💌 sᴜᴘᴘᴏʀᴛ 💌", 
              url=f"https://t.me/{SUPPORT_GRP}",
          ),
      ],
